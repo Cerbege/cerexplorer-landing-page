@@ -1,0 +1,123 @@
+Harika, mesajı aldım. Navbar'daki kayma sorununu kökten çözüyoruz ve "The Majesty of the Savanna" bölümündeki o güçlü, uzun makale metnini eski haline getiriyoruz.
+
+Kodları tablet desteği (1024px) dahil olacak şekilde ama düzeni bozmadan aşağıda birleştirdim.
+
+1. HTML Dosyan (Uzun Metin Geri Geldi)
+Burada özellikle detailed-info kısmındaki metni orijinal uzunluğuna döndürdüm.
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CerExplorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<nav class="navbar">
+    <div class="nav-content">
+        <div class="logo">
+            <img src="img.png/CerExplorerbc.png" alt="logo-nav">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">ANIMALS</a></li>
+            <li><a href="#">THE PRIDE</a></li>
+            <li><a href="#">HABITAT</a></li>
+            <li><a href="#">CONSERVATION</a></li>
+            <li><a href="#">SUBSCRIBE</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="lion-gallery">
+        <div class="lion-card">
+            <img src="img.png/lion1.jpg" alt="The King">
+            <div class="overlay-text">THE KING</div>
+        </div>
+        <div class="lion-card">
+            <img src="img.png/lionfemale.jpg" alt="The Guardian">
+            <div class="overlay-text">THE GUARDIAN</div>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <h2>REIGN OF THE SAVANNA</h2>
+        <div class="info-grid">
+            <div class="info-box">
+                <h3>Social Life</h3>
+                <p>Lions are the only cats that live in groups, called prides. Prides are family units that may include up to 40 lions.</p>
+            </div>
+            <div class="info-box">
+                <h3>The Hunt</h3>
+                <p>Female lions are the primary hunters of the pride. They work together to prey upon large mammals.</p>
+            </div>
+            <div class="info-box">
+                <h3>The Roar</h3>
+                <p>A lion's roar can be heard from as far as 5 miles (8 kilometers) away, a powerful warning to rivals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="detailed-info">
+    <div class="container">
+        <h2 class="section-title">THE MAJESTY OF THE SAVANNA: AN IN-DEPTH ANALYSIS</h2>
+        <div class="long-article">
+            <p>
+                The African lion, scientifically known as <em>Panthera leo</em>, stands as the most iconic symbol of wild strength and social complexity within the animal kingdom. Unlike any other feline species, lions have evolved a sophisticated communal lifestyle centered around the pride, a structural unit that functions as both a family and a strategic military alliance. This social evolution allows them to dominate the vast landscapes of the sub-Saharan savanna, ensuring the survival of the species through collective defense and coordinated hunting maneuvers that can take down prey many times their own size.
+            </p>
+            
+            <p>
+                A mature male lion is distinguished primarily by its magnificent mane, a biological feature that serves as a visual indicator of genetic fitness and hormonal health. Scientific research suggests that a darker and fuller mane often correlates with higher testosterone levels and better nutritional status, acting as a deterrent to rival males and an attraction for potential mates. Beyond aesthetics, this dense collar of fur provides critical protection for the neck and throat during territorial disputes, which are often brutal and decisive encounters that determine the leadership of the pride.
+            </p>
+
+            <div class="highlight-quote">
+                "The roar of a lion is not just a sound, but a declaration of sovereignty that resonates through the heart of the wild."
+            </div>
+
+            <p>
+                The division of labor within a pride is a marvel of evolutionary biology, where lionesses take on the primary role of the hunters while males act as the ultimate guardians of the territory. These females utilize highly advanced tactical formations, often employing an 'ambush and drive' technique that requires impeccable timing and silent communication. While the lionesses provide the sustenance, the males ensure the pride's safety by patrolling boundaries that can span over 100 square miles, fiercely protecting their cubs from nomadic rivals and competing predators like spotted hyenas.
+            </p>
+            
+            <p>
+                However, the future of these majestic apex predators remains precariously balanced on the edge of a conservation crisis due to anthropogenic pressures. Rapid habitat fragmentation, human-wildlife conflict, and the dwindling populations of natural prey have led to a staggering decline in wild lion numbers over the last few decades. Organizations like CerExplorer strive to bridge the gap between human progress and wildlife preservation, emphasizing that the loss of the lion would not only be a biological tragedy but the silencing of the savanna's most powerful voice.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>CerExplorer</h2>
+            <p>Unmatched power, eternal legacy.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Explore</h4>
+            <ul>
+                <li><a href="#">The Pride</a></li>
+                <li><a href="#">Conservation</a></li>
+                <li><a href="#">Habitat</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow the nature</h4>
+            <div class="social-icons">
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2026 CerExplorer - Designed by Cerbege.
+    </div>
+</footer>
+
+</body>
+</html>
